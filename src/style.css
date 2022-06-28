@@ -2,6 +2,17 @@
     --font-main: 'Merriweather', serif;
 }
 
+
+/* .navbar-color {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+} */
+
+header nav.nav-active {
+    background-color: #7C6E5D;
+}
+
 html {
     /* width: 100vw;
     height: 100vh; */
@@ -22,12 +33,21 @@ body {
     height: 100%;
 }
 
-header {
+.main-page-header {
     background-image: url("/img/pexels-max-vakhtbovych-6143369.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100vw;
     min-height: 100vh;
+    position: relative;
+}
+
+.info-page-header {
+    background-image: url("/img/panorama.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 30vh;
     position: relative;
 }
 
@@ -37,9 +57,29 @@ header {
     z-index: 1;
 }
 
+.nav-link:hover,
+.navbar-brand:hover {
+    color: rgba(69, 48, 24, 0.9);
+}
+
 .navbar {
     position: fixed;
 }
+
+
+/* .navbar-filled {
+    background-color: rgba(69, 48, 24, 0.9);
+} */
+
+
+/* .layer-info {
+    background-color: rgba(69, 48, 24, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
 
 img {
     max-width: 100%;
@@ -129,6 +169,18 @@ footer {
     text-align: center;
 }
 
+.footer-info {
+    margin-top: 20px;
+}
+
+.container-info {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.row {
+    padding: 0 120px;
+}
+
 @media(max-device-width:992px) {
     .found {
         text-align: center;
@@ -144,10 +196,16 @@ footer {
     .header__button {
         padding: 15px 25px;
     }
+    .text-align {
+        text-align: center;
+    }
 }
 
 @media(max-device-width:1200px) {
     .header-info {
         max-width: 800px;
+    }
+    .row {
+        padding: 0;
     }
 }
